@@ -6,7 +6,36 @@
 
 /* color palette */
 
-:root{
+:root {
     --grey: #282828;
     --blue: #141922;
+    --green: #87C52C;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: calc(85px + 2rem);
+}
+
+li {
+    list-style: none;
+    font-weight: 500;
+    
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.underline::after {
+    content: "";
+    display: block;
+    justify-self: center;
+    height: .2rem;
+    width: 2rem;
+    background-color: var(--green)
 }
