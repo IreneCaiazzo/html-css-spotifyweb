@@ -13,6 +13,8 @@
     --green: #87C52C;
 }
 
+/* content */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -44,6 +46,11 @@ a {
 
 /* first section */
 
+.recent{
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+}
+
 .sec-title, .title{
     color: white;
 }
@@ -52,17 +59,16 @@ a {
     margin-bottom: 2rem;
 }
 
-.recent{
+.recent .container{
+    margin-bottom: 3rem;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    margin-right: 2.5rem;
-    margin-left: 1rem;
 }
 
-.album{
+.album, .album-sec3{
     display: block;
-    width: 180px;
+    max-width: 180px;
     aspect-ratio: 1 / 1;
     margin-bottom: 1.5rem;
 }
@@ -73,4 +79,30 @@ a {
 
 .artist{
     color: var(--lightgrey);
+    font-weight: 100;
+}
+
+/* second section */
+
+.sec-title-2{
+    margin-bottom: 1rem;
+    color:white;
+}
+
+.subtitle-2{
+    margin-bottom: 1.5rem;
+    color: var(--lightgrey);
+    font-weight: 100;
+}
+
+.recent .container-2{
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* third section */
+
+.album-sec3{
+    border-radius: 50%;
 }
