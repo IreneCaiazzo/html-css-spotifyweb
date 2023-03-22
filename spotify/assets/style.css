@@ -58,6 +58,7 @@ a {
     justify-self: center;
     height: .2rem;
     width: 2rem;
+    margin-left: 2rem;
     background-color: var(--green)
 }
 
@@ -79,24 +80,29 @@ a {
 .recent .container{
     margin-bottom: 3rem;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .playlist{
-    max-width: calc(1200px / 6);
+    max-width: calc((100% - 5rem)/ 6);
     flex: 0 1 auto;
 }
 
 @media screen and (max-width: 878px) {
-    .recent .container{
+    .navbar{
         flex-wrap: wrap;
+        padding-inline: .5rem;
+    }
+
+    .playlist{
+        max-width: calc((100% - 3rem) / 4);
     }
 }
 
 .album, .album-sec3{
     display: block;
-    max-width: 180px;
+    max-width: 100%;
     aspect-ratio: 1 / 1;
     margin-bottom: 1.5rem;
 }
