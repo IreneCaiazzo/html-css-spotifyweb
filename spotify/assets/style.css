@@ -8,6 +8,7 @@
 
 :root {
     --grey: #282828;
+    --lightgrey: #606268;
     --blue: #141922;
     --green: #87C52C;
 }
@@ -18,6 +19,7 @@
     align-items: center;
     gap: 2rem;
     margin-top: calc(85px + 2rem);
+    margin-bottom: 3rem;
 }
 
 li {
@@ -28,7 +30,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--lightgrey);
 }
 
 .underline::after {
@@ -38,4 +40,37 @@ a {
     height: .2rem;
     width: 2rem;
     background-color: var(--green)
+}
+
+/* first section */
+
+.sec-title, .title{
+    color: white;
+}
+
+.sec-title{
+    margin-bottom: 2rem;
+}
+
+.recent{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-right: 2.5rem;
+    margin-left: 1rem;
+}
+
+.album{
+    display: block;
+    width: 180px;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1.5rem;
+}
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.artist{
+    color: var(--lightgrey);
 }
