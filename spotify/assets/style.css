@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* color palette */
+
+:root{
+    --grey: #282828;
+    --blue: #141922;
+}
