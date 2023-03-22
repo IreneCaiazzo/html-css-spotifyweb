@@ -15,9 +15,19 @@
 
 /* upgrade */
 
+.upgrade{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .upgrade button{
-    border: white;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    border-color: white;
+    border-radius: 25px;
+    padding: 1rem 3rem 1rem;
+    
 }
 
 /* content */
@@ -71,6 +81,17 @@ a {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+}
+
+.playlist{
+    max-width: calc(1200px / 6);
+    flex: 0 1 auto;
+}
+
+@media screen and (max-width: 878px) {
+    .recent .container{
+        flex-wrap: wrap;
+    }
 }
 
 .album, .album-sec3{
