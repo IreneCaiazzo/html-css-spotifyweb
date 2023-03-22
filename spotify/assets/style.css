@@ -85,7 +85,7 @@ a {
 }
 
 .playlist{
-    max-width: calc((100% - 5rem)/ 6);
+    max-width: calc((100% - 5rem) / 6);
     flex: 0 1 auto;
 }
 
@@ -100,7 +100,25 @@ a {
     }
 }
 
-@media screen and (max-width: 639px){
+@media screen and (max-width: 639px) {
+    .playlist{
+        max-width: calc((100% - 1rem) / 2);
+    }
+}
+
+@media screen and (max-width: 552px) {  /*TODO: CAPIRE COME DIMENSIONARE UPGRADE E CONTENT*/
+    .menu{
+        max-width: 50px;
+    }
+
+    .upgrade{
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+    .content{
+        left: 50px;
+        width: calc(100% - 50px);
+    }
     .playlist{
         max-width: calc((100% - 1rem) / 2);
     }
