@@ -13,6 +13,65 @@
     --green: #87C52C;
 }
 
+
+/* menu  */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+li{
+    line-height: 2rem;
+}
+
+.icon,
+.install{
+    display: flex;
+    align-items: center;
+}
+
+.icon:last-child{
+    margin-bottom: 2rem;
+}
+
+.playlist-menu .title{
+    color: white;
+}
+
+.add-playlist{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.fa-square-plus{
+    font-size: 35px;
+    margin-right: 1rem;
+    color: var(--lightgrey);
+}
+
+.install{
+    max-width: 80%;
+    margin-inline: 1rem;
+    border-bottom: 1px solid var(--lightgrey);
+    padding-bottom: 1rem;
+}
+
+.account{
+    display: flex;
+    align-items: center;
+    margin-inline: 1rem;
+    margin-top: 1rem;
+}
+
+.user{
+    font-weight: 600;
+    color: white;
+}
+
 /* upgrade */
 
 .upgrade{

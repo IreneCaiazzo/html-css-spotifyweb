@@ -8,7 +8,29 @@ main{
     background-color: #000000;
     z-index: 2;
     position: absolute;
+    color: var(--lightgrey);
 }
+
+.logo{
+    height: 45px;
+    margin-bottom: 1rem ;
+}
+
+li img,
+.account img{
+    width: 25px;
+}
+
+.download{
+    width: 15px;
+}
+
+.account img{
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
 
 .upgrade{
     height: 85px;
