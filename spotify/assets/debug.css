@@ -17,12 +17,18 @@ main{
 }
 
 li img,
-.account img{
-    flex: 0 0 25px;
+.profile{
+    width: 25px;
+    height: auto;
 }
 
 .download{
-    flex: 0 0 15px;
+    width: 15px;
+    flex: 0 0 auto;
+}
+
+.profile{
+    flex: 0 0 auto;
 }
 
 .account img{
