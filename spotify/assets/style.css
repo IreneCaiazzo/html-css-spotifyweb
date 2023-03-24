@@ -41,6 +41,16 @@
     align-items: center;
 }
 
+.menu .highlight::before{
+    content: "";
+    height: 1.5rem;
+    width: .2rem;
+    background-color: var(--green);
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+
 .menu .icon:last-child{
     margin-bottom: 2rem;
 }
