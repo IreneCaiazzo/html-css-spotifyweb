@@ -62,8 +62,7 @@ li{
 }
 
 .install{
-    max-width: 80%;
-    margin-inline: 1rem;
+    max-width: 90%;
     border-bottom: 1px solid var(--lightgrey);
     padding-bottom: 1rem;
 }
@@ -71,7 +70,6 @@ li{
 .account{
     display: flex;
     align-items: center;
-    margin-inline: 1rem;
     margin-top: 1rem;
 }
 
