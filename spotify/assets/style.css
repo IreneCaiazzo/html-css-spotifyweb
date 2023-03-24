@@ -23,57 +23,57 @@
     padding: 1rem;
 }
 
-.logo-small{
+.menu .logo-small{
     display: none;
 }
 
-ul{
+.menu ul{
     list-style: none;
 }
 
-li{
+.menu li{
     line-height: 2rem;
 }
 
-.icon,
-.install{
+.menu .icon,
+.menu .install{
     display: flex;
     align-items: center;
 }
 
-.icon:last-child{
+.menu .icon:last-child{
     margin-bottom: 2rem;
 }
 
-.playlist-menu .title{
+.menu .playlist-menu .title{
     color: white;
 }
 
-.add-playlist{
+.menu .add-playlist{
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.fa-square-plus{
+.menu .fa-square-plus{
     font-size: 35px;
     margin-right: 1rem;
     color: var(--lightgrey);
 }
 
-.install{
+.menu .install{
     max-width: 90%;
     border-bottom: 1px solid var(--lightgrey);
     padding-bottom: 1rem;
 }
 
-.account{
+.menu .account{
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
 
-.user{
+.menu .user{
     font-weight: 600;
     color: white;
 }
@@ -97,7 +97,7 @@ li{
 
 /* content */
 
-.navbar {
+.content .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,18 +106,22 @@ li{
     margin-bottom: 3rem;
 }
 
-li {
+.content ul{
+    list-style: none;
+}
+
+.content .li {
     list-style: none;
     font-weight: 500;
     
 }
 
-a {
+.content a {
     text-decoration: none;
     color: var(--lightgrey);
 }
 
-.underline::after {
+.content .underline::after {
     content: "";
     display: block;
     justify-self: center;
@@ -129,61 +133,61 @@ a {
 
 /* first section */
 
-.recent{
+.content .recent{
     margin-right: 2.5rem;
     margin-left: 1rem;
 }
 
-.sec-title, .title{
+.content .sec-title, .content .title{
     color: white;
 }
 
-.sec-title{
+.content .sec-title{
     margin-bottom: 2rem;
 }
 
-.recent .container{
+.content .recent .container{
     margin-bottom: 3rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.playlist{
+.content .playlist{
     max-width: calc((100% - 5rem) / 6);
     flex: 0 1 auto;
 }
 
-.album, .album-sec3{
+.content .album, .album-sec3{
     display: block;
     max-width: 100%;
     aspect-ratio: 1 / 1;
     margin-bottom: 1.5rem;
 }
 
-.title{
+.content .playlist .title{
     margin-bottom: 1rem;
 }
 
-.artist{
+.content .artist{
     color: var(--lightgrey);
     font-weight: 100;
 }
 
 /* second section */
 
-.sec-title-2{
+.content .sec-title-2{
     margin-bottom: 1rem;
     color:white;
 }
 
-.subtitle-2{
+.content .subtitle-2{
     margin-bottom: 1.5rem;
     color: var(--lightgrey);
     font-weight: 100;
 }
 
-.recent .container-2{
+.content .recent .container-2{
     margin-bottom: 3rem;
     display: flex;
     gap: 1rem;
@@ -191,7 +195,7 @@ a {
 
 /* third section */
 
-.album-sec3{
+.content .album-sec3{
     border-radius: 50%;
 }
 
@@ -199,40 +203,70 @@ a {
 /* player */
 
 .player,
-.song,
-.buttons, 
-.track-bar,
-.volume{
+.player .song,
+.player .buttons, 
+.player .track-bar,
+.player .volume{
     display: flex;
     align-items: center;
+    gap: 1.5rem;
 
 }
 
 .player{
     justify-content: space-between;
     color: white;
+    padding-inline: 1rem;
 }
 
-.artist{
+.player .song,
+.player .volume{
+    flex: 0 0 20%;
+}
+
+.player .track{
+    flex: 0 0 50%;
+}
+
+.player .info{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.player .artist{
     color: white;
 }
 
-.title{
+.player .title,
+.player .fa-heart,
+.player .fa-folder{
     color: var(--lightgrey);
 }
 
-.buttons,
-.track-bar{
+.player .buttons,
+.player .track-bar{
     flex-direction: row;
     justify-content: center;
 }
 
+.player .buttons{
+    padding-bottom: 1rem;
+}
 
+.player .buttons i{
+    font-size: 1.2rem;
+}
+
+.player .buttons .big{
+    font-size: 2rem;
+}
 
 /* media */
 
 @media screen and (max-width: 552px){
-    .logo-small{
+    .menu .logo-small{
         display: block;
         margin-bottom: 1rem;
     }
@@ -241,39 +275,36 @@ a {
         display: none;
     }
 
-    .upper-top-menu{
+    .menu .upper-top-menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: .5rem;
     }
 
-    .install{
+    .menu .install{
         margin-inline: 0;
+        border: none;
     }
 
-    .account{
+    .menu .account{
         margin-inline: 0;
-    }
-
-    .install{
-       border: none;
     }
 }
 
 @media screen and (max-width: 878px) {
-    .navbar{
+    .content .navbar{
         flex-wrap: wrap;
         padding-inline: .5rem;
     }
 
-    .playlist{
+    .content .playlist{
         max-width: calc((100% - 3rem) / 4);
     }
 }
 
 @media screen and (max-width: 639px) {
-    .playlist{
+    .content .playlist{
         max-width: calc((100% - 1rem) / 2);
     }
 }
