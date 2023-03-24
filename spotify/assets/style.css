@@ -232,7 +232,6 @@
     display: flex;
     flex-direction:column;
     justify-content: center;
-    white-space: nowrap;
 }
 
 .player .artist{
@@ -301,6 +300,15 @@
     .content .playlist{
         max-width: calc((100% - 3rem) / 4);
     }
+
+    .player,
+    .player .song,
+    .player .buttons, 
+    .player .track-bar,
+    .player .volume{
+        gap: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 639px) {
