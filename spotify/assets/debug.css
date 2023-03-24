@@ -68,3 +68,45 @@ li img,
     right: 0;
     bottom: 0;
 }
+
+.song img{
+    width: 45px;
+}
+
+
+.track-bar .bar{
+    width: 500px;
+    height: 5px;
+    background-color: var(--lightgrey);
+    border-radius: 5px;
+    position: relative;
+}
+.track-bar .bar::after{
+    content: "";
+    width: 200px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.volume .bar{
+    width: 200px;
+    height: 5px;
+    background-color: var(--lightgrey);
+    border-radius: 5px;
+    position: relative;
+}
+
+.volume .bar::after{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -196,6 +196,39 @@ a {
 }
 
 
+/* player */
+
+.player,
+.song,
+.buttons, 
+.track-bar,
+.volume{
+    display: flex;
+    align-items: center;
+
+}
+
+.player{
+    justify-content: space-between;
+    color: white;
+}
+
+.artist{
+    color: white;
+}
+
+.title{
+    color: var(--lightgrey);
+}
+
+.buttons,
+.track-bar{
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
 /* media */
 
 @media screen and (max-width: 552px){
