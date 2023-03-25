@@ -105,6 +105,10 @@
     
 }
 
+.upgrade button:hover{
+    scale: 1.2;
+}
+
 /* content */
 
 .content .navbar {
@@ -299,6 +303,10 @@
 
 .player .buttons .big{
     font-size: 2rem;
+}
+
+.player .buttons .big:hover{
+    scale: 1.2;
 }
 
 /* media */
