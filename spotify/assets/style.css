@@ -104,6 +104,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 2rem;
 }
 
 .upgrade button{
@@ -111,7 +112,7 @@
     color: white;
     border-color: white;
     border-radius: 25px;
-    padding: 1rem 3rem 1rem;
+    padding: .5rem 2rem .5rem;
     
 }
 
