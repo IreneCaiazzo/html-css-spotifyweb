@@ -88,6 +88,15 @@
     color: white;
 }
 
+.upper-top-menu li:hover,
+.mid-top-menu li:hover,
+.install:hover,
+.navbar a:hover,
+.info .title:hover,
+.icons i:hover{
+    color: white;
+}
+
 /* upgrade */
 
 .upgrade{
