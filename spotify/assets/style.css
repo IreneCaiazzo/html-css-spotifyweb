@@ -201,7 +201,10 @@ h3{
 
 .content .image,
 .content .image-sec3{
+    width: 100%;
+    aspect-ratio: 1 / 1;
     position: relative;
+    margin-bottom: 1rem;
 }
 
 .content .image::after{
